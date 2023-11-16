@@ -1,0 +1,257 @@
+/*Global Qualities*/
+.global-attributes {
+    /*Layout*/
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    /*Postion*/
+
+    /*Style*/
+    font-size: 16px;
+    background-color: #5A535B;
+    -webkit-text-stroke: 1px;
+    -webkit-text-fill-color: rgba(176, 232, 185, 0.45);
+    -webkit-text-stroke-color: rgba(176, 232, 185, 0.75);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    font-family: Inter; 
+    paint-order: stroke fill;
+}
+#container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    top: 15rem;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+}
+
+/*Current Count*/
+#currCount {
+    /*Layout*/
+    display: flex;
+    width: 28.125rem;
+    height: 28.125rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+
+    /*Position*/
+    top: 1.12rem;
+    left: 30.94rem;
+    align-items: center;
+    position: absolute;
+
+    /*Typography*/
+    text-align: center;
+    font-size: 23.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*Informative Text*/
+#measure-text {
+    /*Layout*/
+    display: flex;
+    width: 8.625rem;
+    height: 2.375rem;
+    flex-shrink: 0;
+    justify-content: center;
+
+    /*Position*/
+    top: 45.94rem;
+    left: 19.94rem;
+    position: absolute;
+
+    /*Typography*/
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#displayBPM {
+    /*Layout*/
+    display: flex;
+    width: 15.625rem;
+    height: 9.375rem;
+    flex-shrink: 0;
+    justify-content: center;
+
+
+    /*Position*/
+    top: 40.12rem;
+    left: 55.88rem;
+    position: absolute;
+
+    /*Typography*/
+    text-align: center;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#bpm-text {
+    /*Layout*/ 
+    display: flex; 
+    width: 17.3125rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+    justify-content: center;
+
+
+    /*Position*/
+    top: 53.12rem;
+    left: 64.31rem;
+    position: absolute;
+
+    /*Typography*/
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#accent-text {
+    /*Layout*/
+    display: flex;
+    width: 9.0625rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+    justify-content: center;
+
+
+    /*Position*/
+    top: 37.75rem;
+    left: 18.06rem;
+    position: absolute;
+   
+    font-weight: 200;
+    -webkit-text-stroke: 0.5px, ;
+    -webkit-text-fill-color:rgba(243, 116, 154, 0.75);
+    -webkit-text-stroke-color: rgba(176, 232, 185, 0.75);
+
+
+    /*Typography*/
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+/**********************************************/
+/**********************************************/
+
+/*input*/
+#toggleBeep {
+    /*Layout*/
+    display: flex;
+    width: 7.0625rem;
+    height: 7.0625rem;
+    flex-shrink: 0;
+    justify-content: center;
+
+
+    /*Position*/
+    top: 41.25rem;
+    left: 73.88rem;
+    position: absolute;
+  
+
+    /*Style*/
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.range {
+    /*Layout*/
+    display: flex;
+    width: 75rem;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    justify-content: center;
+
+
+    /*Position*/
+    top: 49.69rem;
+    left: 7.5rem;
+    position: absolute;
+   
+
+    /*Style*/
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.35);
+}
+
+#btn-Container {
+    /*Layout*/
+    display: flex;
+    width: 54.0625rem;
+    height: 4.125rem;
+    flex-shrink: 0;
+    justify-content: center;
+
+
+    /*Position*/
+    top: 33.69rem;
+    left: 18.06rem;
+    position: absolute;
+
+  
+}
+
+.accentBtnStyle {
+    /*Layout*/
+    display: flex;
+    width: 3.75rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+
+
+    /*position*/
+    top: 33.75rem;  /*top 33.75rem*/
+    left: 18.06rem; /*left 18.06rem*/
+    flex-direction: row;
+
+    /*Style*/
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35));
+}
+
+#meter {
+    /*Layout*/
+    display: flex;
+    width: 9.375rem;
+    height: 9.375rem;
+    flex-shrink: 0;
+    justify-content: center;
+
+
+    /*Position*/
+    top: 40.12rem;
+    left: 10.5rem;
+    position: absolute;
+   
+
+    /*Typography*/
+    font-family: Inter;
+   
+    filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.35));
+    text-align: center;
+    font-size: 8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    /*Style*/
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}   
