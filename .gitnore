@@ -1,2 +1,2 @@
 #Ignore virtual enviornment directory
-env/
+venv/
