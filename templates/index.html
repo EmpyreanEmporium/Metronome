@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div id="container">
+    <div id="displayBPM">80</div>
+    <!--Display for the count-->
+    <div id="currCount">4</div>
+    <div id="accent-text">Press to accent</div>
+    <div id="bpm-text">Beats Per Minute</div>
+    <form action="/" method="post">
+        <!--Range based slider-->
+        <div>
+        <input class="range" type="range" id="bpm" min="30" max="222" value="80" step="1">
+        </div>
+    </form>
+    <!--Play/Stop Button-->
+    <button id="toggleBeep" onclick="toggleBeep()">
+        <img id="toggleIcon" src="static/btn-stopped.svg" alt="Start">
+    </button>
+    <div class="accentBtnStyle" id="btn-Container">
+    <!--button be going here-->
+    </div>
+    <input type="number" id="meter" value="4" min="1" max="12">
+    <script>
+    let beatsPer = document.getElementById("bpm").value;
+    let displayBPM = document.getElementById("displayBPM");
+
+        beatsPer.addEventListener("input", function () {
+        var bpmValue = beatsPer.value;
+        console.log("Beats Per Min: " + bpmValue);
+        displayBPM.textContent = bpmValue;
+    });
+    </script>
+    <div id="measure-text">Measure</div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</div>
+{% endblock %}
