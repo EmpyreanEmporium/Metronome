@@ -1,7 +1,7 @@
 import os
 
 #flasky flask
-import flask, import Flask, render_template, request
+from flask import Flask, render_template, request
 
 
 #configure application
