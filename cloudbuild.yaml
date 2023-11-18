@@ -1,7 +1,0 @@
-steps:
-- name: 'gcr.io/cloud-builders/git'
-  args: ['clone', 'https://github.com/EmpyreanEmporium/metronome.git']
-- name: 'grc.io/cloud-builders/python'
-  args: ['pip', 'install', '-r', metronome/requirements.txt]
-- name: 'grc.io/cloud-builders/gcloud'
-  args: ['app', 'deploy', 'metronome/app.yaml']
