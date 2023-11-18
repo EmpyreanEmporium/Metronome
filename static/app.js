@@ -6,6 +6,8 @@ let isPlaying = false; // book to keep track of toggling on/off
 let meter = 4; //default meter.
 let i = 1; //loops
 let currentButton = document.getElementById(`accButton${i}`);
+let bpmSlider = document.getElementById("bpm");
+bpmSlider.value = 80;
 
  //class
  class AccentButton {
@@ -117,7 +119,7 @@ function startBeep() {
         // create Osci for the accented button
         const oscillator = currentButton.instance.createOscillator();
         oscillator.start();
-        oscillator.stop(audioContext.currentTime + 0.02);
+        oscillator.stop(audioContext.currentTime + 0.03);
 
         // update count
         document.getElementById("currCount").textContent = i;
@@ -154,7 +156,17 @@ function toggleBeep() {
     }
 }
 
+ function sliderBackground(){
+    var minValue = parseInt(bpmSlider.min);
+    var maxValue = parseInt(bpmSlider.max);
+    var x = ((bpmSlider.value - minValue) / (maxValue - minValue)) * 100;
+    var color = 'linear-gradient(90deg, rgba(176, 232, 185, 0.85) ' + x + '%, rgba(176, 232, 185, 0.2) ' + x + '%)';
+    console.log("x: ", x);
+    bpmSlider.style.background = color;
+ }
+ bpmSlider.addEventListener("input", sliderBackground);
 
 window.onload = function () {
     btnArray();
+    sliderBackground();
 }
