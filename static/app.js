@@ -2,7 +2,7 @@
 
 //variables
 let sound; //sound creation
-let isPlaying = false; // book to keep track of toggling on/off 
+let isPlaying = false; // book to keep track of toggling on/off
 let meter = 4; //default meter.
 let i = 1; //loops
 let currentButton = document.getElementById(`accButton${i}`);
@@ -54,21 +54,21 @@ bpmSlider.value = 80;
         if (this.isAccented) {
             img.src = this.imgSrcActive;
         } else {
-            img.src = this.imgSrcInactive;     
+            img.src = this.imgSrcInactive;
         }
     }
 
     //create Osci
     createOscillator() {
         const osc = audioContext.createOscillator();
-        osc.type = "square"; 
+        osc.type = "square";
 
         if (this.isAccented) {
             osc.frequency.setValueAtTime(880, audioContext.currentTime);
         } else {
             osc.frequency.setValueAtTime(440, audioContext.currentTime);
         }
-        
+
         osc.connect(audioContext.destination);
 
         return osc;
@@ -110,7 +110,7 @@ function btnArray() {
         new AccentButton( `accButton${i}`, "static/acc-inactive.svg", "static/acc-active.svg");
     }
 }
-   
+
 // function to start beeps
 function startBeep() {
     if (isPlaying) {

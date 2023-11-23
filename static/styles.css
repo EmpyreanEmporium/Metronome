@@ -1,7 +1,7 @@
 /*Global Qualities*/
 .global-attributes {
     /*Layout*/
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
     /*Postion*/
@@ -13,7 +13,7 @@
     -webkit-text-fill-color: rgba(176, 232, 185, 0.45);
     -webkit-text-stroke-color: rgba(176, 232, 185, 0.75);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
-    font-family: Inter; 
+    font-family: Inter;
     paint-order: stroke fill;
 }
 #container {
@@ -93,8 +93,8 @@
 }
 
 #bpm-text {
-    /*Layout*/ 
-    display: flex; 
+    /*Layout*/
+    display: flex;
     width: 17.3125rem;
     height: 2.75rem;
     flex-shrink: 0;
@@ -125,7 +125,7 @@
     top: 37.75rem;
     left: 18.06rem;
     position: absolute;
-   
+
     font-weight: 200;
     -webkit-text-stroke: 0.5px, ;
     -webkit-text-fill-color:rgba(243, 116, 154, 0.75);
@@ -154,7 +154,7 @@
     top: 41.25rem;
     left: 73.88rem;
     position: absolute;
-  
+
 
     /*Style*/
     background: none;
@@ -179,7 +179,7 @@
     top: 49.69rem;
     left: 7.5rem;
     position: absolute;
-   
+
 
     /*Style*/
     border-radius: 0.75rem;
@@ -199,7 +199,7 @@
     /*Position*/
     left: 7.5rem;
     bottom: 10.88rem;
-   
+
     /*Style*/
     background-color: rgba(176, 232, 185, 1);
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.20));
@@ -215,7 +215,7 @@
     /*Position*/
     left: 7.5rem;
     bottom: 10.88rem;
-   
+
     /*Style*/
     background-color: rgba(176, 232, 185, 1);
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.20));
@@ -273,11 +273,11 @@
     top: 40.12rem;
     left: 10.5rem;
     position: absolute;
-   
+
 
     /*Typography*/
     font-family: Inter;
-   
+
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.35));
     text-align: center;
     font-size: 8rem;
@@ -291,4 +291,4 @@
     background-color: transparent;
     padding: 0;
     margin: 0;
-}   
+}

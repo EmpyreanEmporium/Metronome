@@ -14,6 +14,6 @@ def index():
         return render_template("index.html")
     elif request.method == 'POST':
         return render_template("index.html")
-    
+
 if __name__ == '__main__':
         app.run()
